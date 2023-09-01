@@ -1,0 +1,34 @@
+Name: NetLogic
+Type: NetLogicCategoryFolder
+Children:
+- Name: RecipeImportExport
+  Id: g=6cb53afa10b9a522091ccdf1f5f79dce
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: RecipeSchema
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"047ede631a78598231bc7f4bd6cbc0df","Namespace":22}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":2,"Namespace":9}
+  - Class: Method
+    Name: Export
+  - Class: Method
+    Name: Import
+  - Name: CSVFile
+    Id: g=06bbd1eb9bd638cc19323531d314efd6
+    Type: BaseDataVariableType
+    DataType: AbsoluteResourceUri
+    Value: "%PROJECTDIR%\\recipe.txt"
+  - Name: CSVSeparator
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ";"
+  - Name: WrapFields
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false

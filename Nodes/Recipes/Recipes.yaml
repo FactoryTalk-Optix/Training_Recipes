@@ -1,0 +1,89 @@
+Name: Recipes
+Type: RecipesCategoryFolder
+Children:
+- Name: RecipeSchema1
+  Id: g=047ede631a78598231bc7f4bd6cbc0df
+  Type: RecipeSchema
+  Children:
+  - Name: Root
+    Type: BaseObjectType
+    Children:
+    - Name: ModbusTag1
+      Type: BaseDataVariableType
+      DataType: Int16
+      Value: 0
+    - Name: ModbusTag2
+      Type: BaseDataVariableType
+      DataType: Int16
+      Value: 0
+    - Name: ModbusTag3
+      Type: BaseDataVariableType
+      DataType: Int16
+      Value: 0
+  - Class: Reference
+    Target: ns=9;i=27
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=33
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=31
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=35
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=37
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=62
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=58
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=60
+    Direction: Forward
+  - Name: Store
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"4cdf02cac6ef76909b8cb14513c980bc","Namespace":22}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":1,"Namespace":13}
+  - Name: TargetNode
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"76c1d48b43f479d11d7835a98a0233cd","Namespace":22}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: EditModel
+    Id: g=ab7c09e3bea0f1418ff73c52275257ee
+    Type: BaseObjectType
+    Children:
+    - Name: ModbusTag1
+      Type: BaseDataVariableType
+      DataType: Int16
+      Value: 0
+    - Name: ModbusTag2
+      Type: BaseDataVariableType
+      DataType: Int16
+      Value: 0
+    - Name: ModbusTag3
+      Type: BaseDataVariableType
+      DataType: Int16
+      Value: 0
